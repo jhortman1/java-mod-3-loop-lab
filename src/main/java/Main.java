@@ -3,10 +3,31 @@ public class Main {
         // simulate the passing of time
         int startingYear = 2000;
         int targetYear = 2011;
-        int currentYear = startingYear;
+        int currentYear = startingYear+1;
+
+        //while loop
+        
         while (currentYear < targetYear) {
-            System.out.println((currentYear - startingYear) + " year(s) have passed");
-            // conditional logic based on the current year
+            if((currentYear - startingYear) == 1)
+            {
+                System.out.println((currentYear - startingYear) + " year have passed");
+            }else{
+                System.out.println((currentYear - startingYear) + " years have passed");
+            }
+            currentYear++;
+        }
+
+        //for loop
+        currentYear = startingYear+1;
+
+        for(int i = startingYear; i<targetYear-1; i++)
+        {   
+            if((currentYear - startingYear) == 1)
+            {
+                System.out.println((currentYear - startingYear) + " year have passed");
+            }else{
+                System.out.println((currentYear - startingYear) + " years have passed");
+            }
             currentYear++;
         }
     }
